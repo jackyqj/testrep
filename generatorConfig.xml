@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd" >
+<generatorConfiguration>
+	<classPathEntry
+		location="/Users/jacky/jz-work/wcerp/WebContent/WEB-INF/lib/mysql-connector-java-5.1.9.jar" />
+	<context id="context1">
+	    <!-- 
+	     -->
+	    <plugin type="com.wecloud.plugin.PaginationPlugin" />
+		<jdbcConnection driverClass="com.mysql.jdbc.Driver"
+			connectionURL="jdbc:mysql://localhost:3306/wcerp" userId="erpuser"
+			password="Welcome1#">
+		</jdbcConnection>
+		<javaTypeResolver>
+			<property name="forceBigDecimals" value="false" />
+		</javaTypeResolver>
+		<javaModelGenerator targetPackage="com.wecloud.erp.model"
+			targetProject="wcerp">
+			<property name="enableSubPackages" value="false" />
+			<property name="trimStrings" value="true" />
+		</javaModelGenerator>
+		<sqlMapGenerator targetPackage="com.wecloud.erp.persistence.ibatis"
+			targetProject="wcerp">
+			<property name="enableSubPackages" value="false" />
+		</sqlMapGenerator>
+
+		<javaClientGenerator type="XMLMAPPER"
+			targetPackage="com.wecloud.erp.persistence.dao" targetProject="wcerp">
+			<property name="enableSubPackages" value="false" />
+		</javaClientGenerator>
+		<!-- 
+-->
+		<table tableName="CONTACT" domainObjectName="Contact"></table>
+		<table tableName="CUSTOMER" domainObjectName="Customer"></table>
+		<table tableName="ITEM" domainObjectName="Item"></table>
+		<table tableName="PRODUCT" domainObjectName="Product"></table>
+		<table tableName="PRODUCTITEM" domainObjectName="ProductItem"></table>
+		<table tableName="UOM" domainObjectName="Uom"></table>
+		<table tableName="UOMFORMULA" domainObjectName="UomFormula"></table>
+		<table tableName="STORAGE" domainObjectName="Storage"></table>
+		<table tableName="ITEMTYPE" domainObjectName="ItemType"></table>
+		<table tableName="CURRENCY" domainObjectName="Currency"></table>
+		<table tableName="CUSTOMERTYPE" domainObjectName="CustomerType"></table>
+		<table tableName="ERPUSER" domainObjectName="ErpUser"></table>
+		<table tableName="ERPROLE" domainObjectName="ErpRole"></table>
+		<table tableName="PAYMENTTYPE" domainObjectName="PaymentType"></table>
+		<table tableName="CUSTOMERVIEW" domainObjectName="CustomerView"></table>
+		<table tableName="SALESORDER" domainObjectName="SalesOrder"></table>
+		<table tableName="SOITEM" domainObjectName="SoItem"></table>
+		<table tableName="PRODUCEREQUESTITEM" domainObjectName="ProduceRequestItem"></table>
+		<table tableName="SEQUENCE" domainObjectName="Sequence"></table>
+		<table tableName="PAYMENTTYPE" domainObjectName="PaymentType"></table>
+		<table tableName="PRODUCEREQUEST" domainObjectName="ProduceRequest"></table>
+		<table tableName="PRODUCENOTICE" domainObjectName="ProduceNotice"></table>
+		<table tableName="PRODUCEREQUESTVIEW" domainObjectName="ProduceRequestView"></table>
+		<table tableName="checkoutreqitem" domainObjectName="CheckoutReqItem"></table>
+		<table tableName="checkoutrequest" domainObjectName="CheckoutRequest"></table>
+		<table tableName="checkoutrecord" domainObjectName="CheckoutRecord"></table>
+		<table tableName="checkoutrecorditem" domainObjectName="CheckoutRecordItem"></table>
+		<table tableName="productionitem" domainObjectName="ProductionItem"></table>
+		<table tableName="CHECKINRECORDITEM" domainObjectName="CheckinRecordItem"></table>
+		<table tableName="CHECKINRECORD" domainObjectName="CheckinRecord"></table>
+		<table tableName="QCRECORDITEM" domainObjectName="QcRecordItem"></table>
+		<table tableName="QCRECORD" domainObjectName="QcRecord"></table>
+		<table tableName="QCREQUESTITEM" domainObjectName="QcRequestItem"></table>
+		<table tableName="QCREQUEST" domainObjectName="QcRequest"></table>
+		<table tableName="DELIVERYREQUESTITEM" domainObjectName="DeliveryRequestItem"></table>
+		<table tableName="DELIVERYREQUEST" domainObjectName="DeliveryRequest"></table>
+		<table tableName="POITEM" domainObjectName="PoItem"></table>
+		<table tableName="PO" domainObjectName="PO"></table>
+		<table tableName="ORDERREQUEST" domainObjectName="OrderRequest"></table>
+		<table tableName="ORDERREQUESTITEM" domainObjectName="OrderRequestItem"></table>
+		<table tableName="INVENTORY" domainObjectName="Inventory"></table>
+		<table tableName="ITEMSTORAGE" domainObjectName="ItemStorage"></table>
+		<table tableName="SORETURN" domainObjectName="SoReturn"></table>
+		<table tableName="SORETURNITEM" domainObjectName="SoReturnItem"></table>
+		<table tableName="PORETURN" domainObjectName="PoReturn"></table>
+		<table tableName="PORETURNITEM" domainObjectName="PoReturnItem"></table>
+		<table tableName="FAULTY" domainObjectName="Faulty"></table>
+        <table tableName="FAULTYITEM" domainObjectName="FaultyItem"></table>
+        <table tableName="itemsuppliermapping" domainObjectName="ItemSupplierMapping"></table>
+		<table tableName="ITEMSUMMARY" domainObjectName="ItemSummary"></table>
+		<table tableName="POSUMMARY" domainObjectName="PoSummary"></table>
+		<table tableName="SOSUMMARY" domainObjectName="SoSummary"></table>
+		<table tableName="itemrequestedview" domainObjectName="ItemRequestedView"></table>
+        <table tableName="splititemview" domainObjectName="SplitItemView"></table>
+				
+	</context>
+</generatorConfiguration>
