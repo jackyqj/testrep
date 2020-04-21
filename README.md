@@ -58,7 +58,7 @@ Product ID: `sudo cat /sys/class/dmi/id/product_uuid`
 
 # Setup daemon.
 `sudo vi /etc/docker/daemon.json` with content below: 
-`
+
 {\
   "exec-opts": ["native.cgroupdriver=systemd"],\
   "log-driver": "json-file",\
